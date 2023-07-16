@@ -84,7 +84,6 @@ function scrollToSection(sectionId) {
       <img class="mb-5 img-fluid" width="100" src="assets/img/react.png" alt="React" />
       <img class="mb-5 img-fluid" width="100" src="assets/img/php.png" alt="PHP" />
       <img class="mb-5 img-fluid" width="100" src="assets/img/mysql.png" alt="MySQL" />
-      <img class="mb-5 img-fluid" width="150" height="150" src="assets/img/tailwind.png" alt="Tailwind" />
   </div>
   
 </section>
@@ -121,6 +120,60 @@ function scrollToSection(sectionId) {
 
 
 
+
+
+   <!-- Modal repositorio de archivos -->
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">Informacion del proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Plataforma para gestionar y almacenar los diferentes archivos que se vayan generando en la dependencia DCYTIC y facultades asignadas. 
+        Dos tipos de usuarios, admin y user los cuales permiten registrar, visualizar y editar los archivos. Uso de llaves foraneas para asignar los archivos 
+      a un usuario en especifico, manejo de errores tanto en backend y frontend, eliminación logica, restauracón de los mismos. Herramientas usadas: Laravel 9, React JS, Tailwind, React MUI, Axios, MySQL. Versionado
+     git para gestionar las diferentes versiones, ramas (main, development y feature).        </div>     
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal conociendo puebla -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel3">Informacion del proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Con la finalidad de dar a conocer los diferentes lugares de donde vienen los alumnos de la facultad se desarrollo una pagina web 
+        en HTML, CSS y JavaScript con diferentes secciones para ver los capitulos que se van generando.
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+   <!-- Modal diseño -->
+   <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel4">Informacion del proyecto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        Diseño de una tienda con las siguientes herramientas: Laravel 10, Tailwind. Reutilizando componentes para evitar duplicar codigo. Responsive para una correcta 
+        visualización en diferentes dispositivos como celular, tablet, laptop y escritorio.
+        </div>     
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="masthead text-center text-white" >
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       
@@ -129,6 +182,9 @@ function scrollToSection(sectionId) {
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
       <div class="carousel-inner">
         <div id="scroll" class="carousel-item active">
@@ -136,7 +192,9 @@ function scrollToSection(sectionId) {
           <div class="carousel-caption d-none d-md-block">
             <h5>Repositorio de archivos</h5>
             <p>Elaborado con Laravel, React JS, MySQL</p>
-            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              About project             
+      </button>
           </div>
           
         </div>
@@ -156,6 +214,31 @@ function scrollToSection(sectionId) {
           </div>
      
         </div>
+        <div class="carousel-item">
+          <img src="assets/img/buap4.PNG" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vista administrador</h5>
+            <p>Permite registrar, ver y eliminar las diferentes opciones de la plataforma</p>
+          </div>
+     
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/buap5.PNG" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vista registrar</h5>
+            <p>Formulario para registrar un usuario</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/buap6.PNG" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vista de archivos de usuarios</h5>
+            <p>Permite visualizar los archivos de los usuarios, eliminar y restaurar</p>
+          </div>
+        </div>
+
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -185,6 +268,13 @@ function scrollToSection(sectionId) {
           <div class="carousel-caption d-none d-md-block">
             <h5>Conociendo Puebla</h5>
             <p>Elaborado con HTML, javascript, CSS</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              About project             
+            </button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='https://cpadlubuap.webcindario.com/'">
+              Visitame
+            </button>
+            
           </div>
           
         </div>
@@ -232,6 +322,9 @@ function scrollToSection(sectionId) {
           <div class="carousel-caption d-none d-md-block">
             <h5>Diseño con componentes</h5>
             <p>Elaborado con Laravel, javascript, Tailwind CSS</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              About project             
+      </button>
           </div>
           
         </div>
